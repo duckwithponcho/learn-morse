@@ -1,0 +1,14 @@
+/* Page Styling */
+
+/* Nav Bar Styling */
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -6,14 +6,18 @@
 		<meta name="description" content="Simple HTML, CSS, and JavaScript Project">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>LM! - Dots and Dashes</title>
-        <link rel="stylesheet" href="css/main_styles.css">
-        <script src="js/index_functions.js"></script>
+        <link rel="stylesheet" href="../css/main_styles.css">
+        <script defer src="../js/dnd_functions.js"></script>
     </head>
     <body>
         <nav>
             <a href="../index.html" id="title">Learn Morse</a>
-            <a href="#About" class="nav-item">About</a>
-            <a href="#" class="nav-item dropdown-button">Activities</a>
+            <div class="dropdown">
+                <a href="#" class="nav-item dropdown-button">Activities</a>
+                <div class="dropdown-content">
+                    <a href="#">Dots and Dashes</a>
+                </div>
+            </div>
             <a href="References.html" class="nav-item">References</a>
             <div class="icon-item nav-item">
                 <a href="https://github.com/duckwithponcho/learn-morse/" target="_blank">
@@ -23,12 +27,38 @@
             </div>
         </nav>
         <main>
-            <div class="interactable-display">
-
+            <h1>
+                Dots and Dashes
+            </h1>
+            <div class="interactables">
+                <button class="interactable-button" id="morse-to-word">
+                    Practice Reading
+                </button>
+                <button class="interactable-button" id="letter-to-morse">
+                    Practice Writing Characters
+                </button>
+            </div>
+            <div class="interactable-display" id="morse-to-word-display">
+                <p id="text-box0">
+                    What word is this?:
+                </p>
+                <p id="display-box0">
+                    You typed:
+                </p>
+                <!-- <input id="input-box"> -->
+            </div>
+            <div class="interactable-display" id="letter-to-morse-display">
+                <p id="text-box1">
+                    Write this in morse!:
+                </p>
+                <p id="display-box1">
+                    You typed:
+                </p>
+                <!-- <input id="input-box"> -->
             </div>
             <div class="info-section" id="Dots_And_Dashes">
-                 <h2>
-                    Dots and Dashes
+                <h2>
+                    Explanation
                 </h2>
                 <p>
                     Lorem ipsum.
