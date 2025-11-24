@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-		<meta name="author" content="Simon Le">
-		<meta name="description" content="Simple HTML, CSS, and JavaScript Project">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>LM! - Dots and Dashes</title>
-        <link rel="stylesheet" href="../css/main_styles.css">
-        <script defer src="../js/dnd_functions.js"></script>
-    </head>
-    <body>
-        <nav>
-            <a href="../index.html" id="title">Learn Morse</a>
-            <div class="dropdown">
-                <a href="#" class="nav-item dropdown-button">Activities</a>
-                <div class="dropdown-content">
-                    <a href="#">Dots and Dashes</a>
-                </div>
-            </div>
-            <a href="References.html" class="nav-item">References</a>
-            <div class="icon-item nav-item">
-                <a href="https://github.com/duckwithponcho/learn-morse/" target="_blank">
-                    Github
-                    <!-- Github Icon -->
-                </a>
-            </div>
-        </nav>
-        <main>
-            <h1>
-                Dots and Dashes
-            </h1>
-            <div class="interactables">
-                <button class="interactable-button" id="morse-to-word">
-                    Practice Reading
-                </button>
-                <button class="interactable-button" id="letter-to-morse">
-                    Practice Writing Characters
-                </button>
-            </div>
-            <div class="interactable-display" id="morse-to-word-display">
-                <p id="text-box0">
-                    What word is this?:
-                </p>
-                <p id="display-box0">
-                    You typed:
-                </p>
-                <!-- <input id="input-box"> -->
-            </div>
-            <div class="interactable-display" id="letter-to-morse-display">
-                <p id="text-box1">
-                    Write this in morse!:
-                </p>
-                <p id="display-box1">
-                    You typed:
-                </p>
-                <!-- <input id="input-box"> -->
-            </div>
-            <div class="info-section" id="Dots_And_Dashes">
-                <h2>
-                    Explanation
-                </h2>
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
-        </main>
-        <footer>
-            <button>To Top</button>
-            <a href="pages/References.html">References</a>
-            <div class="icon-item">
-                <a href="https://github.com/duckwithponcho/learn-morse/" target="_blank">
-                    Github
-                    <!-- Github Icon -->
-                </a>
-            </div>
-        </footer>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Simon Le" />
+    <meta
+      name="description"
+      content="Simple HTML, CSS, and JavaScript Project"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>LM! - Dots and Dashes</title>
+    <link rel="stylesheet" href="../css/main_styles.css" />
+    <script type="module" src="../js/word_list.js"></script>
+    <script type="module" defer src="../js/dnd_functions.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" id="title">Learn Morse</a>
+      <div class="dropdown">
+        <a href="#" class="nav-item dropdown-button">Activities</a>
+        <div class="dropdown-content">
+          <a href="#">Dots and Dashes</a>
+        </div>
+      </div>
+      <a href="./References.html" class="nav-item">References</a>
+      <div class="icon-item nav-item">
+        <a
+          href="https://github.com/duckwithponcho/learn-morse/"
+          target="_blank"
+        >
+          Github
+          <!-- Github Icon -->
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1>Dots and Dashes</h1>
+      <div class="interactables">
+        <button class="interactable-button" id="morse-to-char">
+          Practice Reading Characters
+        </button>
+        <button class="interactable-button" id="morse-to-word">
+          Practice Reading Words
+        </button>
+        <button class="interactable-button" id="char-to-morse">
+          Practice Writing Characters
+        </button>
+        <button class="interactable-button" id="word-to-morse">
+          Practice Writing Words
+        </button>
+      </div>
+      <div class="interactable-display" id="morse-to-char-display">
+        <p id="text-box0">What Letter is this?: </p>
+        <label for="input-box0">Type here!:</label>
+        <input type="input-box0" id="input-box0" name="input-box0" />
+        <p id="feedback-box0"></p>
+      </div>
+      <div class="interactable-display" id="morse-to-word-display">
+        <p id="text-box1">What Word is this?: </p>
+        <label for="input-box1">Type here!:</label>
+        <input type="input-box1" id="input-box1" name="input-box1" />
+        <p id="feedback-box1"></p>
+      </div>
+      <div class="interactable-display" id="char-to-morse-display">
+        <p id="text-box2">Write this in morse!: </p>
+        <label for="input-box2">Type here!:</label>
+        <input type="input-box2" id="input-box2" name="input-box2" />
+        <p id="feedback-box2"></p>
+      </div>
+      <div class="interactable-display" id="word-to-morse-display">
+        <p id="text-box3">Write this in morse!: </p>
+        <label for="input-box3">Type here!:</label>
+        <input type="input-box3" id="input-box3" name="input-box3" />
+        <p id="feedback-box3"></p>
+      </div>
+      <div class="info-section" id="Dots_And_Dashes">
+        <h2>Explanation</h2>
+        <p>Lorem ipsum.</p>
+      </div>
+    </main>
+    <footer>
+      <button>To Top</button>
+      <a href="./References.html">References</a>
+      <div class="icon-item">
+        <a
+          href="https://github.com/duckwithponcho/learn-morse/"
+          target="_blank"
+        >
+          Github
+          <!-- Github Icon -->
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
